@@ -1,0 +1,9 @@
+@import './helpers/variables';
+@import './helpers/utilities';
+@import './mixins/mixin';
+
+@import './base/reset';
+@import './base/fontStyle';
+@import './layout/nav.scss';
+@import './layout/footer.scss';
+@import './pages/index.scss';

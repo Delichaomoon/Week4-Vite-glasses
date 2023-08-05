@@ -1,0 +1,219 @@
+// banner
+.banner {
+  background-image: url(.././image/index/home-header.png);
+  background-size: cover;
+  height: 100vh;
+  @include pad {
+    background-image: url(.././image/index/home-header-sm.png);
+  }
+  &-wrap {
+    height: 100%;
+    @include mobile {
+      p {
+        font-size: 16px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+    }
+  }
+  &-txt {
+    a {
+      display: inline-block;
+      padding: 6px 12px;
+      border: 1px solid map-get($color-type, primary);
+      cursor: pointer;
+      transition: all 0.3s;
+      &:hover {
+        color:map-get($color-type, primary);
+        background: map-get($color-type, light);
+      }
+    }
+  }
+}
+
+// service
+.service {
+  @include mobile {
+    padding: 40px 0;
+  }
+  h3 {
+    font-size: 24px;
+  }
+  &-list {
+    @include pad {
+      flex-wrap: wrap;
+    }
+    li {
+      width: 23.6%;
+      @include pad {
+        width: 49.2%;
+      }
+      @include mobile {
+        width: 100%;
+      }
+      &:nth-child(1),
+      &:nth-child(2) {
+        @include pad {
+          margin-bottom: 24px;
+        }
+      }
+      &:nth-child(3) {
+        @include mobile {
+          margin-bottom: 24px;
+        }
+      }
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
+
+// classic
+.classic {
+  padding: 80px 0;
+  @include mobile {
+    padding: 40px 0;
+  }
+  ul {
+    @include pad {
+      flex-wrap: wrap;
+    }
+  }
+  li {
+    width: 32.1%;
+    @include pad {
+      width: 100%;
+    }
+    &:nth-child(1),
+    &:nth-child(2) {
+      margin-bottom: 24px;
+    }
+  }
+  img {
+    width: 416px;
+    height: 416px;
+    @include pad {
+      width: 348px;
+      height: 348px;
+    }
+    @include mobile {
+      width: 336px;
+      height: 336px;
+    }
+  }
+}
+
+// design
+.design {
+  background-image: url(.././image/index/index-bg.png);
+  background-position: center center;
+  background-size: cover;
+  @include pad {
+    background-image: url(.././image/index/index-bg-md.png);
+    background-position: 0 0;
+  }
+  @include mobile {
+    background-image: url(.././image/index/index-bg-sm.png);
+    padding: 40px 0;
+  }
+  h3 {
+    @include mobile {
+      font-size: 24px;
+    }
+  }
+  &-glasses {
+    @include pad {
+      flex-direction: column;
+      li:first-child{
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+// recommand
+.recommand {
+  padding: 80px 0;
+  @include mobile {
+    padding: 40px 0;
+  }
+  ul {
+    @include pad {
+      flex-wrap: wrap;
+    }
+  }
+  li {
+    width: 23.6%;
+    border: 1px solid #dee2e6;
+    box-shadow: 0px 2px 6px #00000029;
+    @include pad {
+      width: 49.2%;
+    }
+    @include mobile {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+    &:nth-child(1),
+    &:nth-child(2) {
+      @include pad {
+        margin-bottom: 24px;
+      }
+    }
+    &:nth-last-child(1) {
+      @include mobile {
+        margin-bottom: 0;
+      }
+    }
+  }
+  img {
+    @include mobile {
+      width: 100%;
+    }
+  }
+  &-txt {
+    padding: 16px;
+  }
+}
+// contact
+.contact {
+  @include mobile {
+    padding: 40px 0;
+  }
+  &-wrap {
+    margin: 0 auto;
+    width: 636px;
+    @include pad {
+      width: 576px;
+    }
+    @include mobile {
+      width: 100%;
+    }
+    p {
+      @include pad {
+        font-size: 16px;
+      }
+    }
+  }
+  &-input {
+    width: 100%;
+    height: 36px;
+  }
+  .btn {
+    margin: 0 auto;
+    max-width: 416px;
+    @include pad {
+      max-width: 336px;
+    }
+    @include mobile {
+      max-width: 348px;
+    }
+  }
+  .agree {
+    @include mobile {
+      margin-bottom: 24px;
+    }
+  }
+}
