@@ -56,7 +56,10 @@
 .font-italic{
   font-style: italic;
 }
-.fz-32{
+.fz42 {
+  font-size: 42px;
+}
+.fz32 {
   font-size: 32px;
 }
 .mb4{
@@ -73,4 +76,10 @@
 }
 .py32{
   padding: 32px 0;
+}
+.brown1 {
+  background: #5F3E2D;
+}
+.brown2 {
+  background: #B75929;
 }
